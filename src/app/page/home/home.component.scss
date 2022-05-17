@@ -1,0 +1,116 @@
+@import "../../../assets/styles/variables";
+
+.solution {
+  background-color: rgb(231, 129, 107);
+  text-align: center;
+  color: $white;
+  position: relative;
+  height: 800px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  &__description {
+    padding-top: 50px;
+    .title {
+    }
+
+    .text {
+    }
+
+    .btn {
+      padding: 20px;
+      background-color: $white;
+      color: $grey;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $grey;
+        color: $white;
+      }
+    }
+  }
+
+  .image {
+    position: absolute;
+    top: 34%;
+    left: -20%;
+  }
+}
+
+.design {
+    width: 100%;
+  height: auto;
+  .containe {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    .card {
+      position: relative;
+      width: fit-content;
+      &:hover{
+          opacity: 0.5;
+      }
+      .image {
+        width: 300px;
+        height: auto;
+        border-radius: 20px;
+      }
+      .contetn{
+        position: absolute;
+        top: 38%;
+        left: 30%;
+        .title{
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 18px;
+            &::after{
+                content: '>';
+                margin-left: 10px;
+                color: rgb(231, 129, 107);
+                transition: width 1s;
+                transform: translateX(25px);
+            }
+
+            &:hover{
+                &::after{
+                    content: '>';
+                    margin-left: 15px;
+                    transition: width 2s;
+                    transform: translateX(-25px);
+                }
+            }
+          }
+      }
+
+    }
+  }
+}
+
+.personality{
+    position: relative;
+    .personality--flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        .card{
+            text-align: center;
+            .card-img{
+                background-image: url('../../../assets/images/pattern/bg-pattern-small-circle.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
