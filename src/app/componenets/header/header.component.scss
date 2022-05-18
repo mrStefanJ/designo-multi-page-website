@@ -19,7 +19,9 @@
   padding: 20px 5px;
   @include sm {
     align-items: center;
-    padding: 20px 80px;
+  }
+  @include md{ 
+    padding: 20px 50px;
   }
 }
 .burger {
