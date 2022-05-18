@@ -1,7 +1,7 @@
 @import "../../../assets/styles/mixins";
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: rgb(29, 29, 31);
@@ -10,13 +10,16 @@ footer {
 .conteiner__footer {
   display: flex;
   flex-direction: column;
-
-  @include sm {
-    padding: 20px 80px;
+  padding-top: 200px;
+  @include md{ 
+    padding: 200px 50px 0;
   }
 }
 
 .logo-company {
+  @include md{
+    border-bottom: 1px solid rgb(93, 93, 95);
+  }
   .logo {
     padding: 20px 0;
     @include sm {
@@ -40,6 +43,12 @@ footer {
     }
     &__page-link {
       @include sm {
+        width: 62%;
+      }
+      @include md {
+        width: 80%;
+      }
+      @include xl{
         width: 100%;
       }
       .link-list {
@@ -49,7 +58,11 @@ footer {
         margin-left: 0;
         @include sm {
           display: flex;
-          justify-content: flex-end;
+          justify-content: space-between;
+        }
+
+        @include xl{
+          justify-content: end;
         }
         .link-item {
           margin-bottom: 5px;
@@ -80,10 +93,8 @@ footer {
   @include sm {
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
-  }
-  @include lg{
-      justify-content: space-between;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   &__address {
