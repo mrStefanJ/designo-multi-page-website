@@ -9,13 +9,25 @@ import { HomeComponent } from './page/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //material components model
 import { MatIconModule } from '@angular/material/icon';
+import { WebDesignComponent } from './page/web-design/web-design.component';
+import { AppDesignComponent } from './page/app-design/app-design.component';
+import { GraphicDesignComponent } from './page/graphic-design/graphic-design.component';
+import { ContactUsComponent } from './page/contact-us/contact-us.component';
+import { AboutUsComponent } from './page/about-us/about-us.component';
+import { LocationComponent } from './page/location/location.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    WebDesignComponent,
+    AppDesignComponent,
+    GraphicDesignComponent,
+    ContactUsComponent,
+    AboutUsComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
