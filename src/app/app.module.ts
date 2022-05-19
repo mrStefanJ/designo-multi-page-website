@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componenets/header/header.component';
 import { FooterComponent } from './componenets/footer/footer.component';
 import { HomeComponent } from './page/home/home.component';
+
+//model
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//material components model
 import { MatIconModule } from '@angular/material/icon';
+import { HttpClientModule } from "@angular/common/http"
+
 import { WebDesignComponent } from './page/web-design/web-design.component';
 import { AppDesignComponent } from './page/app-design/app-design.component';
 import { GraphicDesignComponent } from './page/graphic-design/graphic-design.component';
@@ -33,7 +36,8 @@ import { LocationComponent } from './page/location/location.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
