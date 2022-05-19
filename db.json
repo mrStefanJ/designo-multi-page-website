@@ -1,0 +1,132 @@
+{
+  "design": [
+    {
+      "id": 1,
+      "title": "Web Design",
+      "urlImage": "/assets/images/home/desktop/image-web-design-small.jpg",
+      "link": "/web-design"
+    },
+    {
+      "id": 2,
+      "title": "App Design",
+      "urlImage": "/assets/images/home/desktop/image-app-design.jpg",
+      "link": "/app-design"
+    },
+    {
+      "id": 3,
+      "title": "Graphic Design",
+      "urlImage": "/assets/images/home/desktop/image-graphic-design.jpg",
+      "link": "/graphic-design"
+    }
+  ],
+  "person": [
+    {
+      "id": 1,
+      "title": "Passionate",
+      "content": "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.",
+      "urlImage": "/assets/images/home/illustration-passionate.svg"
+    },
+    {
+      "id": 2,
+      "title": "Resourceful",
+      "content": "Everything that we do has a strategic purpose. We use an agile approch in all of our projects and value customer collaboration. It guarantess superior results that fulfill our clients' needs.",
+      "urlImage": "/assets/images/home/illustration-resourceful.svg"
+    },
+    {
+      "id": 3,
+      "title": "Friendly",
+      "content": "We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.",
+      "urlImage": "/assets/images/home/illustration-friendly.svg"
+    }
+  ],
+  "webDesign": [
+    {
+      "id": 1,
+      "title": "Express",
+      "text": "A multi-carrier shipping website for ecommerce businesses",
+      "urImage": "/assets/images/services/web-design/image-express.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Transfer",
+      "text": "Site for low-cost money transfers and sending money within seconds",
+      "urImage": "/assets/images/services/web-design/image-transfer.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Photo",
+      "text": "A state-of-the-art music player with high-resolution audio and DSP effects",
+      "urImage": "/assets/images/services/web-design/image-photon.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Builder",
+      "text": "Connects users with local contractorsbased on their location",
+      "urImage": "/assets/images/services/web-design/image-builder.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Blogr",
+      "text": "Blogr is a platform for creating an online blog or publication",
+      "urImage": "/assets/images/services/web-design/image-blogr.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Camp",
+      "text": "Get expert training in coding, data, design, and digital marketing",
+      "urImage": "/assets/images/services/web-design/image-camp.jpg"
+    }
+  ],
+  "appDesign": [
+    {
+      "id": 1,
+      "title": "Airfilter",
+      "text": "Solving the problem of poor indoor air quality by filtering the air",
+      "urImage": "/assets/images/services/app-design/image-airfilter.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Transfer",
+      "text": "Product that lets you edit your favorite photos and videos at any time",
+      "urImage": "/assets/images/services/app-design/image-eyecam.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Photo",
+      "text": "Get to meet your favorite internet superstar with the faceit app",
+      "urImage": "/assets/images/services/app-design/image-faceit.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Builder",
+      "text": "A todo app that features cloud sync with light and dark mode",
+      "urImage": "/assets/images/services/app-design/image-loopstudios.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Blogr",
+      "text": "A VR experience app made for Loopstudios",
+      "urImage": "/assets/images/services/app-design/image-todo.jpg"
+    }
+  ],
+  "graphicDesign": [
+    {
+      "id": 1,
+      "title": "Airfilter",
+      "text": "Solving the problem of poor indoor air quality by filtering the air",
+      "urImage": "/assets/images/services/app-design/image-change.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Eyecam",
+      "text": "Product that lets you edit your favorite photos and videos at any time",
+      "urImage": "/assets/images/services/app-design/image-boxed-water.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Faceit",
+      "text": "Get to meet your favorite internet superstar with the faceit app",
+      "urImage": "/assets/images/services/app-design/image-science.jpg"
+    }
+  ]
+}
