@@ -1,1 +1,47 @@
-<p>web-design works!</p>
+<div class="container">
+    <section class="web-design">
+        <div class="design__content">
+            <h1 class="title">Web Design</h1>
+            <p class="text">We build websites that serve as powerful marketing tools and bring memorable brand
+                experiences.</p>
+        </div>
+    </section>
+
+    <section class="webSite">
+        <div class="webSite-list" *ngIf="dataWebDesign">
+            <div class="webSite-card" *ngFor="let data of dataWebDesign">
+                <img class="card-image" [src]="data.urImage" [alt]="data.title">
+                <div class="card-content">
+                    <h2 class="title">{{ data.title }}</h2>
+                    <p class="text">{{ data.text }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="design" *ngIf="design">
+        <div class="card" *ngFor="let data of design">
+            <a [routerLink]="data.link">
+                <img class="card-image" [src]="data.urlImage" [alt]="data.title">
+                <div class="card-contetn">
+                    <h1 class="title">{{ data.title }}</h1>
+                    <p class="link" [routerLink]="data.link">View Projects</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="content">
+                <h3 class="title">Let's talk about your project</h3>
+                <p class="text">Ready to take it to the next level? Contact us today and find out how our expertise can
+                    help your
+                    business grow.</p>
+            </div>
+            <div class="link">
+                <a class="btn" routerLink="/contact">Get in touch</a>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,232 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixins";
+
+//section web-design
+.web-design {
+  background-color: $salmon-light2;
+  height: 320px;
+  text-align: center;
+  @include md {
+    border-radius: 30px;
+  }
+  @include xl {
+    margin: 0 auto;
+  }
+  .design__content {
+    color: $white;
+    .title {
+      padding-top: 105px;
+      font-size: 32px;
+    }
+    .text {
+      padding-top: 24px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+// section webSite
+.webSite {
+  margin: 80px 0;
+  @include xl {
+    margin: 80px auto;
+  }
+  .webSite-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 auto;
+    @include xl {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .webSite-card {
+      height: auto;
+      border-radius: 20px;
+      background-color: $oldLace;
+      margin-bottom: 30px;
+
+      &:hover {
+        background-color: $salmon-light2;
+        .title {
+          color: $white;
+        }
+        .text {
+          color: $white;
+        }
+      }
+      @include md {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+      }
+      @include xl {
+        flex-direction: column;
+        width: 320px;
+        height: auto;
+        margin-left: 30px;
+      }
+    }
+    .card-image {
+      height: auto;
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      @include md {
+        width: 50%;
+      }
+      @include xl {
+        width: 100%;
+      }
+    }
+    .card-content {
+      padding: 10px 30px;
+      text-align: center;
+      .title {
+        color: $salmon-light2;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+      text {
+        font-size: 16px;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+//section design
+.design {
+  @include xl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .card {
+    position: relative;
+    height: 250px;
+    margin: 20px 0;
+    border-radius: 20px;
+    &:hover {
+      opacity: 0.5;
+    }
+    .card-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+    .card-contetn {
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      text-align: center;
+      @include md{
+        left: 40%;
+      }
+
+      @include xl{
+        left: 25%;
+      }
+      .title {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 1.4px;
+        color: $white;
+      }
+      .link {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-left: 1px;
+        color: $white;
+        &::after {
+          content: ">";
+          margin-left: 10px;
+          color: $salmon-light2;
+        }
+      }
+    }
+  }
+}
+
+ //section contact
+ .contact {
+  position: relative;
+  height: 200px;
+  padding: 0 20px;
+  @include xl {
+    margin: 0 50px;
+  }
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -164px;
+    padding: 30px 0;
+    color: $white;
+    background-color: $salmon-light2;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 2;
+    background-image: url("../../../assets/images/contact/bg-pattern-hero-contact-mobile.svg");
+
+    @include xl {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .content{
+          width: 100%;
+          text-align: left;
+          
+              .title{
+                  padding: 20px 20px;
+              }
+              .text{
+                  padding: 0px 20px;
+              }
+          
+      }
+      .link{
+          width: 45%;
+      }
+    }
+    .title {
+      padding: 20px 46px;
+      font-size: 24px;
+      @include md {
+        padding: 20px 200px;
+        font-size: 36px;
+      }
+    }
+
+    .text {
+      padding: 20px 46px;
+    }
+
+    .btn {
+      padding: 20px;
+      background-color: $white;
+      color: $grey;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      @include lg {
+        margin-left: 50px;
+      }
+
+      &:hover {
+        background-color: $grey;
+        color: $white;
+      }
+    }
+  }
+}

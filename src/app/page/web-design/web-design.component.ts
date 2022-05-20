@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-web-design',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebDesignComponent implements OnInit {
 
-  constructor() { }
+  dataWebDesign: any;
+  design: any;
+
+  constructor(private service: ApiService) { }
 
   ngOnInit(): void {
+    this.getData();
+    this.getDataDesign();
   }
 
+  getData(){
+    this.service.getDataWebDesign().subscribe(res => {
+      this.dataWebDesign = res;
+    })
+  }
+
+  getDataDesign(){
+    this.service.getDataDesign().subscribe(res => {
+      this.design = res.slice(1);
+      console.log(this.design);
+    })
+  }
 }
