@@ -1,16 +1,11 @@
 @import "../../../assets/styles/variables";
 @import "../../../assets/styles/mixins";
 
-.container {
-  @include md {
-    padding: 0 50px;
-  }
-}
 .solution {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(231, 129, 107);
+  background-color: $salmon-light2;
   text-align: center;
   color: $white;
   height: 700px;
@@ -22,6 +17,7 @@
   }
   @include lg {
     flex-direction: row;
+    justify-content: space-around;
   }
 
   &__description {
@@ -36,9 +32,9 @@
     }
     @include lg {
       text-align: left;
+      width: 50%;
     }
     .title {
-      font-size: 36px;
       @include md {
         padding: 0 50px;
       }
@@ -77,23 +73,22 @@
     position: relative;
     width: 100%;
     height: 100%;
+    @include lg{
+      width: 30%;
+    }
     .image {
-      width: 600px;
+      width: 100%;
       position: absolute;
-      top: -30%;
-      right: -44%;
+      top: 14%;
+      right: 0;
+      left: 0;
       @include sm {
-        width: 100%;
         top: -60px;
-        left: 0px;
-        right: 0;
       }
       @include md {
-        width: 90%;
         height: auto;
         position: relative;
         top: -100px;
-        left: 0;
       }
 
       @include lg{ 
@@ -110,13 +105,42 @@
   @include sm {
     padding: 50px 0;
   }
-  .containe {
+  .container__design {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @include sm{
       width: 100%;
+    }
+    @include lg{
+      display: grid;
+      grid-template-columns: auto 30px auto;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "web . app"
+      "web . app"
+      "web . graphic"
+      "web . graphic";
+
+      .card:nth-child(1){
+        grid-area: web;
+        .image{
+          height: 625px;
+        }
+      }
+      .card:nth-child(2){
+        grid-area: app;
+        .image{
+          height: 300px;
+        }
+      }
+      .card:nth-child(3){
+        grid-area: graphic;
+        .image{
+          height: 300px;
+        }
+      }
     }
     .card {
       position: relative;
@@ -152,31 +176,21 @@
         }
         .title {
           font-size: 24px;
-          color: #ffffff;
+          color: $white;
           @include md {
             font-size: 40px;
           }
         }
         .link {
-          text-decoration: none;
           text-transform: uppercase;
-          color: #ffffff;
+          color: $white;
           font-size: 18px;
           &::after {
             content: ">";
             margin-left: 10px;
-            color: rgb(231, 129, 107);
+            color: $salmon-light2;
             transition: width 1s;
             transform: translateX(25px);
-          }
-
-          &:hover {
-            &::after {
-              content: ">";
-              margin-left: 15px;
-              transition: width 2s;
-              transform: translateX(-25px);
-            }
           }
         }
       }
@@ -227,10 +241,11 @@
         }
         @include xl{
           padding-top: 30px;
+          padding-left: 25px;
           text-align: center;
         }
 
-        h3 {
+        .title {
           font-size: 20px;
           font-weight: 500;
           letter-spacing: 4px;
@@ -241,7 +256,8 @@
   }
 }
 
-.contact{
+ //section contact
+ .contact {
   position: relative;
   height: 200px;
   padding: 0 20px;
@@ -251,25 +267,47 @@
     right: 0;
     bottom: -164px;
     padding: 30px 0;
-    color: #ffffff;
-    background-color: rgb(231, 129, 107);
+    color: $white;
+    background-color: $salmon-light2;
     text-align: center;
     border-radius: 20px;
     z-index: 2;
-    background-image: url('../../../assets/images/contact/bg-pattern-hero-contact-mobile.svg');
+    background-image: url("../../../assets/images/contact/bg-pattern-hero-contact-mobile.svg");
 
-    h3{
+    @include xl {
+      width: 1111px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .content{
+          width: 100%;
+          text-align: left;
+          
+              .title{
+                  padding: 20px 20px;
+              }
+              .text{
+                  padding: 0px 20px;
+              }
+          
+      }
+      .link{
+          width: 45%;
+      }
+    }
+    .title {
       padding: 20px 46px;
       font-size: 24px;
-      @include md{
+      @include md {
         padding: 20px 200px;
         font-size: 36px;
       }
     }
 
-    p{
+    .text {
       padding: 20px 46px;
-      @include md{
+      @include md {
         padding: 0px 130px;
       }
     }
@@ -284,7 +322,7 @@
       text-transform: uppercase;
       font-weight: 700;
 
-      @include lg{
+      @include lg {
         margin-left: 50px;
       }
 

@@ -1,89 +1,60 @@
 <div class="container">
-    <div class="solution">
-        <div class="solution__description">
-            <h2 class="title">Award-winning custom designs and deg</h2>
-            <p class="text">With over 10 years in the industry, we are experienced in creating fully responsive
-                websites, app design, and
-                engaging brand experiences. Find out more about our services.</p>
-            <button class="btn">Learn More</button>
-        </div>
-        <div class="image-card">
-            <img class="image" src="../../../assets/images/home/image-hero-phone.png" alt="mobile">
-        </div>
-
-    </div>
-
-    <div class="design">
-        <div class="containe">
-            <div class="card">
-                <img class="image" src="../../../assets/images/home/desktop/image-web-design-small.jpg"
-                    alt="web design">
-                <div class="contetn">
-                    <p class="title">Web Design</p>
-                    <a class="link" href="">View Projects</a>
-                </div>
+    <section>
+        <div class="solution">
+            <div class="solution__description">
+                <h1 class="title">Award-winning custom designs and deg</h1>
+                <p class="text">With over 10 years in the industry, we are experienced in creating fully responsive
+                    websites, app design, and
+                    engaging brand experiences. Find out more about our services.</p>
+                <button class="btn">Learn More</button>
             </div>
-            <div class="card">
-                <img class="image" src="../../../assets/images/home/desktop/image-app-design.jpg" alt="app design">
-                <div class="contetn">
-                    <p class="title">App Design</p>
-                    <a class="link" href="">View Projects</a>
-                </div>
+            <div class="image-card">
+                <img class="image" src="../../../assets/images/home/image-hero-phone.png" alt="mobile">
             </div>
-            <div class="card">
-                <img class="image" src="../../../assets/images/home/desktop/image-graphic-design.jpg"
-                    alt="graphic design">
-                <div class="contetn">
-                    <p class="title">Graphic Design</p>
-                    <a class="link" href="">View Projects</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="design" *ngIf="designData">
+            <div class="container__design">
+                <div class="card" *ngFor="let data of designData">
+                    <img class="image" [src]="data.urlImage" [alt]="data.title">
+                    <div class="contetn">
+                        <p class="title">{{ data.title }}</p>
+                        <a class="link" [routerLink]="data.link">View Projects</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="personality">
-        <div class="personality--flex">
-            <div class="card">
-                <div class="card-img">
-                    <img src="../../../assets/images/home/illustration-passionate.svg" alt="passionate">
-                </div>
-                <div class="card-contain">
-                    <h3>Passionate</h3>
-                    <p>Each project starts with an in-depth brand research to ensure we only create products that serve
-                        a
-                        purpose. We merge art, design, and technology into exciting new solutions.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="../../../assets/images/home/illustration-resourceful.svg" alt="resource">
-                </div>
-                <div class="card-contain">
-                    <h3>Resourceful</h3>
-                    <p>Everything that we do has a strategic purpose. We use an agile approch in all of our projects and
-                        value customer collaboration. It guarantess superior results that fulfill our clients' needs.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="../../../assets/images/home/illustration-friendly.svg" alt="friendly">
-                </div>
-                <div class="card-contain">
-                    <h3>Friendly</h3>
-                    <p>We are a group of enthusiastic folks who know how to put people first. Our success depends on our
-                        customers, and we strive to give them the best experience a company can provide.</p>
+    <section>
+        <div class="personality" *ngIf="personalityData">
+            <div class="personality--flex">
+                <div class="card" *ngFor="let data of personalityData">
+                    <div class="card-img">
+                        <img [src]="data.urlImage" [alt]="data.title">
+                    </div>
+                    <div class="card-contain">
+                        <h3 class="title">{{ data.title }}</h3>
+                        <p class="text">{{ data.content }}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="contact">
+    <section class="contact">
         <div class="container">
-            <h3>Let's talk about your project</h3>
-            <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your
-                business grow.</p>
-            <button class="btn">Get in touch</button>
+            <div class="content">
+                <h3 class="title">Let's talk about your project</h3>
+                <p class="text">Ready to take it to the next level? Contact us today and find out how our expertise can
+                    help your
+                    business grow.</p>
+            </div>
+            <div class="link">
+                <a class="btn" routerLink="/contact">Get in touch</a>
+            </div>
         </div>
-    </div>
+    </section>
 </div>
