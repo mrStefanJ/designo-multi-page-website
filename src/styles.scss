@@ -34,9 +34,23 @@ $multi-page-theme: mat.define-light-theme((
 @include mat.all-component-themes($multi-page-theme);
 
 /* You can add global styles to this file, and also import other style files */
+@import '../src/assets/styles/mixins';
+
 body{
     margin: 0;
     padding: 0;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a { text-decoration: none; }
+
+.container {
+  @include md {
+    padding: 0 50px;
+  }
+  @include xl {
+    padding: 0 200px;
+    width: 1111px;
+    margin: 0 auto;
+  }
+}
