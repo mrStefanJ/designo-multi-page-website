@@ -114,19 +114,19 @@
       "id": 1,
       "title": "Airfilter",
       "text": "Solving the problem of poor indoor air quality by filtering the air",
-      "urImage": "/assets/images/services/app-design/image-change.jpg"
+      "urImage": "/assets/images/services/graphic-design/image-change.jpg"
     },
     {
       "id": 2,
       "title": "Eyecam",
       "text": "Product that lets you edit your favorite photos and videos at any time",
-      "urImage": "/assets/images/services/app-design/image-boxed-water.jpg"
+      "urImage": "/assets/images/services/graphic-design/image-boxed-water.jpg"
     },
     {
       "id": 3,
       "title": "Faceit",
       "text": "Get to meet your favorite internet superstar with the faceit app",
-      "urImage": "/assets/images/services/app-design/image-science.jpg"
+      "urImage": "/assets/images/services/graphic-design/image-science.jpg"
     }
   ]
 }
