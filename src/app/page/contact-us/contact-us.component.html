@@ -1,1 +1,52 @@
-<p>contact-us works!</p>
+<div class="container">
+    <section class="contact-section">
+        <div class="contact-us__card">
+            <h1 class="contact-us__title">Contact Us</h1>
+            <p class="contact-us__text">Ready to take it to the next level? Let’s talk about your project or idea and find out how
+                we can help your business grow. If you are looking for unique digital experiences that’s relatable to
+                your users, drop us a line.</p>
+        </div>
+        
+        <form class="contact-us__form" [formGroup]="contactForm" (ngSubmit)="contacUs()">
+            <div class="form-input">
+                <input class="input" type="text" placeholder="Name" formControlName="name" required />
+            </div>
+            <div class="form-input">
+                <input class="input" type="text" placeholder="Email Adress" formControlName="email" required />
+            </div>
+            <div class="form-input">
+                <input class="input" type="text" placeholder="Phone" formControlName="phone" required />
+            </div>
+            <div class="form-input">
+                <textarea class="textarea" placeholder="Your Message" formControlName="message" required ></textarea>
+            </div>
+            <div class="btn__center">
+                <button class="btn" [disabled]="!contactForm.valid">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="location">
+        <div class="location-card">
+            <div class="image">
+                <img class="location-img" [src]="imgCAN" alt="Canada">
+            </div>
+            <h1 class="location-name">Canada</h1>
+            <button class="location-btn" routerLink="/contact">See Location</button>
+        </div>
+        <div class="location-card">
+            <div class="image">
+                <img class="location-img" [src]="imgAUS" alt="Australia">
+            </div>
+            <h1 class="location-name">Australia</h1>
+            <button class="location-btn" routerLink="/contact">See Location</button>
+        </div>
+        <div class="location-card">
+            <div class="image">
+                <img class="location-img" [src]="imgUK" alt="United Kingdom">
+            </div>
+            <h1 class="location-name">United Kiingdom</h1>
+            <button class="location-btn" routerLink="/contact">See Location</button>
+        </div>
+    </section>
+</div>

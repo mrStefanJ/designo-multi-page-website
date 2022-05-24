@@ -1,0 +1,149 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixins";
+
+.contact-section {
+  background-color: $salmon-light2;
+  @include xl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-us__card {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    @include xl {
+      text-align: left;
+      padding: 0 60px;
+    }
+    .contact-us__title{
+      font-size: 30px;
+    }
+    .contact-us__text{
+      padding: 0 20px;
+      font-size: 16px;
+      @include xl {
+        padding: 0;
+      }
+    }
+  }
+  .contact-us__form {
+    width: 100%;
+    .form-input{
+      padding: 0px 30px;
+      .input {
+        margin: 10px 0;
+        width: 100%;
+        padding: 20px 0;
+        border: none;
+        background-color: $salmon-light2;
+        color: $white;
+        border-bottom: 1px solid $white;
+        outline: none;
+        &::placeholder {
+          color: $white;
+        }
+      }
+      .textarea {
+        width: 100%;
+        padding: 30px 0;
+        border: none;
+        background-color: $salmon-light2;
+        color: $white;
+        border-bottom: 1px solid $white;
+        outline: none;
+        resize: none;
+        &::placeholder {
+          color: $white;
+        }
+      }
+    }
+  }
+  @include md {
+    border-radius: 20px;
+  }
+}
+
+.btn__center {
+  padding: 40px 0;
+  text-align: center;
+  .btn {
+    padding: 20px;
+    background-color: $white;
+    color: $grey;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $grey;
+      color: $white;
+    }
+
+    &:disabled {
+      background-color: $oldLace;
+      color: $white;
+      cursor: not-allowed;
+    }
+    @include lg {
+      margin-left: 50px;
+    }
+  }
+}
+
+//section location
+.location {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include xl {
+    margin: 150px auto;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .location-card {
+    text-align: center;
+    padding: 30px 0px;
+    .image {
+      background-image: url("../../../assets/images/contact/bg-pattern-hero-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: auto;
+      width: 100%;
+      .location-img {
+        width: 100%;
+        @include md {
+          width: 50%;
+        }
+        @include xl {
+          width: 100%;
+        }
+      }
+    }
+
+    .location-name {
+      color: $grey-dark;
+    }
+    .location-btn {
+      padding: 20px;
+      background-color: $salmon-light2;
+      color: $white;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $grey;
+        color: $white;
+      }
+    }
+  }
+}
