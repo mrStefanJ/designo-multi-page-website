@@ -1,1 +1,80 @@
-<p>location works!</p>
+<div class="container">
+
+    <section class="map">
+        <div class="map-location">
+            <div class="map-location__image">
+                <img [src]="locationCAN" class="image">
+            </div>
+            <div class="map-location__texbox">
+                <h1>Canada</h1>
+                <div class="flex-column">
+                    <div class="map__description">
+                        <p>Designo Central Office</p>
+                        <p>3886 Wellington Street</p>
+                        <p>Toronto, Ontario M9C 3J5</p>
+                    </div>
+                    <div class="map__description">
+                        <p>Contact</p>
+                        <p>P : +1 253-863-8967</p>
+                        <p>M : contact@designo.co</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-location">
+            <div class="map-location__image">
+                <img [src]="locationAUS" class="image">
+            </div>
+            <div class="map-location__texbox">
+                <h1>Australia</h1>
+                <div class="flex-column">
+                    <div class="map__description">
+                        <p>Designo AU Office</p>
+                        <p>19 Balonne Street</p>
+                        <p>New South Wales 2443</p>
+                    </div>
+                    <div class="map__description">
+                        <p>Contact</p>
+                        <p>P : (02) 6720 9092</p>
+                        <p>M : contact@designo.au</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-location">
+            <div class="map-location__image">
+                <img [src]="locationENG" class="image">
+            </div>
+            <div class="map-location__texbox">
+                <h1>United kingdom</h1>
+                <div class="flex-column">
+                    <div class="map__description">
+                        <p>Designo Central Office</p>
+                        <p>13 Colorado Way</p>
+                        <p>Rhyd-y-fro SA8 9GA</p>
+                    </div>
+                    <div class="map__description">
+                        <p>Contact</p>
+                        <p>P : 078 3115 1400</p>
+                        <p>M : contact@designo.uk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="content">
+                <h3 class="title">Let's talk about your project</h3>
+                <p class="text">Ready to take it to the next level? Contact us today and find out how our expertise can
+                    help your
+                    business grow.</p>
+            </div>
+            <div class="link">
+                <a class="btn" routerLink="/contact">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+</div>

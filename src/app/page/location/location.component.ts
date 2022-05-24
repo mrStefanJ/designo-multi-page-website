@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationComponent implements OnInit {
 
+  locationCAN = '../../../assets/images/locations/tablet/image-map-canada.png';
+  locationAUS = '../../../assets/images/locations/tablet/image-map-australia.png';
+  locationENG = '../../../assets/images/locations/tablet/image-map-uk.png'
   constructor() { }
 
   ngOnInit(): void {
