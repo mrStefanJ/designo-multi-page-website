@@ -77,12 +77,10 @@
     border-radius: 10px;
     text-transform: uppercase;
     font-weight: 700;
-
     &:hover {
       background-color: $grey;
       color: $white;
     }
-
     &:disabled {
       background-color: $oldLace;
       color: $white;
@@ -126,7 +124,6 @@
         }
       }
     }
-
     .location-name {
       color: $grey-dark;
     }
@@ -139,11 +136,15 @@
       border-radius: 10px;
       text-transform: uppercase;
       font-weight: 700;
-
       &:hover {
         background-color: $grey;
         color: $white;
       }
     }
   }
+}
+
+.message-error{
+  color: $white;
+  font-weight: 500;
 }

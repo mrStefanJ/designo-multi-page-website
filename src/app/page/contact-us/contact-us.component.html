@@ -10,15 +10,35 @@
         <form class="contact-us__form" [formGroup]="contactForm" (ngSubmit)="contacUs()">
             <div class="form-input">
                 <input class="input" type="text" placeholder="Name" formControlName="name" required />
+                <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)" class="message-error">
+                    <div *ngIf="contactForm.controls['name'].errors?.['required']">
+                        Please enter name
+                    </div>
+                </div>
             </div>
             <div class="form-input">
                 <input class="input" type="text" placeholder="Email Adress" formControlName="email" required />
+                <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)" class="message-error">
+                    <div *ngIf="contactForm.controls['email'].errors?.['required']">
+                        Please enter email
+                    </div>
+                </div>
             </div>
             <div class="form-input">
                 <input class="input" type="text" placeholder="Phone" formControlName="phone" required />
+                <div *ngIf="contactForm.controls['phone'].invalid && (contactForm.controls['phone'].dirty || contactForm.controls['phone'].touched)" class="message-error">
+                    <div *ngIf="contactForm.controls['phone'].errors?.['required']">
+                        Please enter your phone number
+                    </div>
+                </div>
             </div>
             <div class="form-input">
                 <textarea class="textarea" placeholder="Your Message" formControlName="message" required ></textarea>
+                <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="message-error">
+                    <div *ngIf="contactForm.controls['message'].errors?.['required']">
+                        Please enter message
+                    </div>
+                </div>
             </div>
             <div class="btn__center">
                 <button class="btn" [disabled]="!contactForm.valid">Submit</button>

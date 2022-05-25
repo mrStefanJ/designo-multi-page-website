@@ -12,8 +12,8 @@ export class ContactUsComponent implements OnInit {
   contactForm = this.fb.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
-    phone: ['', Validators.required],
-    message: ['', Validators.required],
+    phone: ['', [Validators.required, Validators.pattern('^\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*$')]],
+    message: ['', [Validators.required, Validators.minLength(10)]],
   });
 
   imgCAN: string = '../../../assets/images/contact/illustration-canada.svg';
