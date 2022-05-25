@@ -18,11 +18,13 @@
         <div class="design" *ngIf="designData">
             <div class="container__design">
                 <div class="card" *ngFor="let data of designData">
-                    <img class="image" [src]="data.urlImage" [alt]="data.title">
-                    <div class="contetn">
-                        <p class="title">{{ data.title }}</p>
-                        <a class="link" [routerLink]="data.link">View Projects</a>
-                    </div>
+                    <a [routerLink]="data.link">
+                        <img class="image" [src]="data.urlImage" [alt]="data.title">
+                        <div class="contetn">
+                            <p class="title">{{ data.title }}</p>
+                            <a class="link">View Projects</a>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
