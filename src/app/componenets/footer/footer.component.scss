@@ -1,11 +1,12 @@
 @import "../../../assets/styles/mixins";
+@import "../../../assets/styles/variables";
 
 footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: rgb(29, 29, 31);
-  color: rgb(93, 93, 95);
+  background-color: $grey-dark;
+  color: $grey;
 }
 .conteiner__footer {
   display: flex;
@@ -14,11 +15,15 @@ footer {
   @include md{ 
     padding: 200px 50px 0;
   }
+  @include xl {
+    width: 1111px;
+    margin: 0 auto;
+  }
 }
 
 .logo-company {
   @include md{
-    border-bottom: 1px solid rgb(93, 93, 95);
+    border-bottom: 1px solid $grey;
   }
   .logo {
     padding: 20px 0;
@@ -28,7 +33,7 @@ footer {
       align-items: center;
     }
     &__image {
-      border-bottom: 1px solid rgb(93, 93, 95);
+      border-bottom: 1px solid $grey;
       margin: 0 50px;
       @include sm {
         border-bottom: none;
@@ -58,7 +63,7 @@ footer {
         margin-left: 0;
         @include sm {
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-end;
         }
 
         @include xl{
@@ -73,10 +78,9 @@ footer {
             font-size: 18px;
           }
           .item {
-            text-decoration: none;
-            color: rgb(93, 93, 95);
+            color: $grey;
             &:hover {
-              color: rgb(159, 109, 102);
+              color: $salmon-light;
             }
           }
         }
@@ -144,8 +148,11 @@ footer {
       padding: 0;
       li {
         margin: 0 5px;
-        a {
-          color: rgb(159, 109, 102);
+        .icon {
+          color: $salmon-light;
+          &:hover{
+            color: $oldLace;
+          }
           @include sm {
             font-size: 20px;
           }
