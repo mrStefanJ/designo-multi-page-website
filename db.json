@@ -128,5 +128,14 @@
       "text": "Get to meet your favorite internet superstar with the faceit app",
       "urImage": "/assets/images/services/graphic-design/image-science.jpg"
     }
+  ],
+  "contact": [
+    {
+      "name": "asdasd",
+      "email": "stefanjoncic@gmail.com",
+      "phone": "+381640008817",
+      "message": "asdasdassad asd asd asd asd asd",
+      "id": 1
+    }
   ]
 }
